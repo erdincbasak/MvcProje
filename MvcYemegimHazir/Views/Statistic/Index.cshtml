@@ -1,0 +1,55 @@
+﻿@{ ViewBag.Title = "Index";
+                Layout = "~/Views/Shared/_AdminLayout.cshtml"; }
+<br />
+
+<h2>İstatistikler</h2>
+
+<html>
+<head>
+
+</head>
+<br />
+<body>
+    <div class="row row-cols-1 row-cols-md-3 g-4 text-center ">
+        <div class="col">
+            <div class="card text-white bg-gradient-primary">
+                <div class="card-body">
+                    <h2 class="card-text text-bold" >@ViewBag.totalNumberOfCategories</h2>
+                    <h3 class="card-text">Toplam Kategori Sayısı</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white bg-gradient-danger text-center">
+                <div class="card-body">
+                    <h2 class="card-text text-bold">@ViewBag.softwareCategoryTitleNumber</h5>
+                    <h3 class="card-text">Yazılım Kategorisi Başlık Sayısı</p>
+</div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white bg-gradient-purple text-center">
+                <div class="card-body">
+                    <h2 class="card-text text-bold">@ViewBag.writerNameSortByA</h5>
+                    <h3 class="card-text">Yazar Adında A Harfi Bulunan Yazar Sayısı</h3></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white bg-gradient-fuchsia text-center">
+                <div class="card-body">
+                    <h2 class="card-text text-bold">@ViewBag.categoryNameWithTheMostTitles</h5>
+                        <h3 class="card-text">En Fazla Başlığa Sahip Kategori Adı</h3>
+                    </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-white bg-gradient-success text-center">
+                <div class="card-body">
+                    <h2 class="card-text text-bold">@ViewBag.activeCategories</h5>
+                    <h3 class="card-text">Kategori Tablosunda Durumu TRUE Olan Kategori Sayısı</h3>
+</div>
+            </div>
+        </div>
+</body>
+</html>
+
